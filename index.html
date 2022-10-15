@@ -1,0 +1,86 @@
+<!-- this !DOCTYPE html is used to define HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- this meta links are here by default -->
+    <!-- to be short, it is used to define characters, content scale and etc. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the title is used for web page's title -->
+    <title>News Page</title>
+    <!-- css file imported into web-page  -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- these links are used to connect font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- this link is used to connect specific font called 'Bodoni Moda' -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap" rel="stylesheet">
+    <!-- css code in web-page  -->
+    <style>
+        /* background-color is applied to hover attribute in HTML tag */
+        a:hover {
+            background-color: red;
+            transition: 0.3s;
+        }
+        a {
+            transition: 0.3s;
+        }
+        body {
+            /* if there wouldn't be no links for fonts, this stroke wouldn't work */
+            font-family: 'Bodoni Moda';
+            /* this color were picked by used Google Color Picker */
+            background-color: #f0e7db;
+        }
+        /* css is applied to id attribute in HTML tag */
+        #news {
+            text-align: center;
+            display: block;
+            margin-top: 50px;
+        }
+        /* css is applied to class attribute in HTML tag */
+        .news_one img {
+            max-width: 400px;
+            display: inline-flex;
+            transition: 0.5s;
+        }
+        .news_one h2 {
+            font-size: 16px;
+            color: #313131;
+        }
+        .news_one {
+            float: left;
+            margin-left: 176px;
+        }
+    </style>
+</head>
+<body>
+    <!-- this div has class because it is styled in css file -->
+    <div class="title_of_the_page">
+        <h1>NEWS PAGE</h1>
+        <ul class="news_genres">
+            <li>Politics</li>
+            <li>Tech</li>
+            <li>Books</li>
+        </ul>
+    </div>
+
+    <!-- this is news section -->
+    <div id="news">
+        <div class="news_one">
+            <a href="news1.html">
+                <img src="img/news1.webp" alt="">
+                <h2>Trump, Reacting to Pending Jan. 6<br>Subpoena, Repeats Election Lies in Letter</h2>
+            </a>
+        </div>
+        <div class="news_one">
+            <a href="news2.html"><img src="img/news2.webp" alt="">
+            <h2>Nvidia RTX 4090 Founders Edition</h2></a>
+        </div>
+        <div class="news_one">
+            <a href="news3.html"><img src="img/news3.webp" alt="">
+            <h2>Children’s and teens roundup<br>the best new picture books and novels</h2></a>
+        </div>
+    </div>
+</body>
+</html>
